@@ -15,19 +15,19 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);min-h
 .logo h2{font-size:20px;font-weight:700;font-family:'Syne',sans-serif;}.logo p{font-size:11px;color:var(--tx2);letter-spacing:.1em;text-transform:uppercase;margin-top:4px;}
 .card{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--rl);padding:28px;width:100%;max-width:360px;}
 .tabs{display:flex;background:var(--bg3);border-radius:8px;padding:3px;margin-bottom:22px;gap:3px;}
-.tab{flex:1;padding:8px;text-align:center;border-radius:6px;font-size:13px;cursor:pointer;color:var(--tx2);border:none;background:none;transition:all .2s;font-family:'DM Sans',sans-serif;}
+.tab{flex:1;padding:8px;text-align:center;border-radius:6px;font-size:13px;cursor:pointer;color:var(--tx2);border:none;background:none;transition:all .2s;font-family:'DM Sans',sans-serif;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .tab.on{background:var(--bg4);color:var(--tx);}
 .fg{margin-bottom:14px;}
 .fg label{display:block;font-size:11px;color:var(--tx2);margin-bottom:5px;letter-spacing:.05em;text-transform:uppercase;}
 .fg input,.fg select,.fg textarea{width:100%;background:var(--bg3);border:1px solid var(--brd);border-radius:var(--r);padding:11px 13px;color:var(--tx);font-size:14px;outline:none;font-family:'DM Sans',sans-serif;transition:border-color .2s;}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold);}
-.fg select option{background:var(--bg3);}.fg textarea{resize:vertical;min-height:75px;}
-.btn{width:100%;padding:12px;background:var(--gold);color:#0E0E0F;border:none;border-radius:var(--r);font-size:14px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;transition:opacity .2s;}
+.fg select option,.fg select optgroup{background:var(--bg3);}.fg textarea{resize:vertical;min-height:75px;}
+.btn{width:100%;padding:12px;background:var(--gold);color:#0E0E0F;border:none;border-radius:var(--r);font-size:14px;font-weight:700;cursor:pointer;font-family:'Syne',sans-serif;transition:opacity .2s;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .btn:hover{opacity:.88;}
-.btn2{padding:9px 16px;background:var(--bg3);color:var(--tx);border:1px solid var(--brd);border-radius:var(--r);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;}
+.btn2{padding:9px 16px;background:var(--bg3);color:var(--tx);border:1px solid var(--brd);border-radius:var(--r);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .btn2:hover{border-color:var(--gold-border);color:var(--gold);}
-.btn-ok{padding:9px 16px;background:rgba(26,122,94,.15);color:var(--teal);border:1px solid rgba(26,122,94,.3);border-radius:var(--r);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;}
-.btn-err{padding:9px 16px;background:rgba(224,80,80,.12);color:var(--red);border:1px solid rgba(224,80,80,.3);border-radius:var(--r);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;}
+.btn-ok{padding:9px 16px;background:rgba(26,122,94,.15);color:var(--teal);border:1px solid rgba(26,122,94,.3);border-radius:var(--r);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
+.btn-err{padding:9px 16px;background:rgba(224,80,80,.12);color:var(--red);border:1px solid rgba(224,80,80,.3);border-radius:var(--r);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .hint{font-size:11px;color:var(--tx3);margin-top:13px;text-align:center;}
 #shell{flex-direction:column;}
 .topbar{background:var(--bg2);border-bottom:1px solid var(--brd);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:sticky;top:0;z-index:50;}
@@ -36,11 +36,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);min-h
 .ba{background:var(--gold-bg);color:var(--gold);border:1px solid var(--gold-border);}
 .bu{background:rgba(255,255,255,.05);color:var(--tx2);border:1px solid var(--brd);}
 .tr{display:flex;align-items:center;gap:12px;}.tusr{font-size:13px;color:var(--tx2);}
-.blogout{font-size:12px;color:var(--tx3);background:none;border:none;cursor:pointer;padding:6px 10px;border-radius:6px;font-family:'DM Sans',sans-serif;}
+.blogout{font-size:12px;color:var(--tx3);background:none;border:none;cursor:pointer;padding:6px 10px;border-radius:6px;font-family:'DM Sans',sans-serif;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .blogout:hover{background:var(--bg3);color:var(--tx);}
 .body{display:flex;flex:1;}
 .sidebar{width:190px;min-width:190px;background:var(--bg2);border-right:1px solid var(--brd);padding:16px 12px;display:flex;flex-direction:column;gap:4px;}
-.ni{display:flex;align-items:center;gap:9px;padding:10px 11px;border-radius:var(--r);font-size:13px;font-weight:500;color:var(--tx2);cursor:pointer;transition:all .2s;border:none;background:none;text-align:left;width:100%;font-family:'DM Sans',sans-serif;}
+.ni{display:flex;align-items:center;gap:9px;padding:10px 11px;border-radius:var(--r);font-size:13px;font-weight:500;color:var(--tx2);cursor:pointer;transition:all .2s;border:none;background:none;text-align:left;width:100%;font-family:'DM Sans',sans-serif;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .ni:hover{background:var(--bg3);color:var(--tx);}.ni.on{background:var(--gold-bg);color:var(--gold);border:1px solid var(--gold-border);}
 .nbadge{background:var(--gold);color:#0E0E0F;font-size:9px;font-weight:700;padding:2px 6px;border-radius:8px;margin-left:auto;}
 .main{flex:1;overflow-y:auto;padding:24px 22px;max-height:calc(100vh - 52px);}
@@ -115,7 +115,8 @@ tr:hover td{background:rgba(255,255,255,.015);}
 .prog-label{display:flex;justify-content:space-between;font-size:12px;color:var(--tx2);margin-bottom:6px;}
 .prog-bar{height:6px;background:var(--bg4);border-radius:3px;overflow:hidden;}
 .prog-fill{height:100%;background:var(--gold);border-radius:3px;transition:width .5s;}
-@media(max-width:640px){.sidebar{display:none;}.main{padding:16px;}.cgrid{grid-template-columns:1fr 1fr;}.tusr{display:none;}th,td{padding:10px 12px;font-size:12px;}}
+.recusa-box{background:rgba(224,80,80,.07);border:1px solid rgba(224,80,80,.2);border-radius:var(--r);padding:10px 13px;margin-top:6px;font-size:12px;color:#E05050;line-height:1.5;}
+@media(max-width:640px){.sidebar{display:none;}.main{padding:16px;}.cgrid{grid-template-columns:1fr 1fr;}.tusr{display:none;}th,td{padding:9px 11px;font-size:12px;}}
 </style>
 </head>
 <body>
@@ -132,14 +133,14 @@ tr:hover td{background:rgba(255,255,255,.015);}
       <button class="tab" id="tab-alu">Aluno</button>
     </div>
     <div id="form-adm">
-      <div class="fg"><label>E-mail</label><input type="email" id="adm-email" placeholder="Digite seu e-mail"></div>
-      <div class="fg"><label>Senha</label><input type="password" id="adm-pass" placeholder="Digite sua senha"></div>
+      <div class="fg"><label>E-mail</label><input type="email" id="adm-email" placeholder="Digite seu e-mail" autocomplete="email"></div>
+      <div class="fg"><label>Senha</label><input type="password" id="adm-pass" placeholder="Digite sua senha" autocomplete="current-password"></div>
       <button class="btn" id="btn-adm">Entrar como Admin</button>
       <p class="hint">Acesso restrito a equipe Mecanismo X</p>
     </div>
     <div id="form-alu" style="display:none">
-      <div class="fg"><label>E-mail</label><input type="email" id="alu-email" placeholder="seu@email.com"></div>
-      <div class="fg"><label>Senha</label><input type="password" id="alu-pass" placeholder="sua senha"></div>
+      <div class="fg"><label>E-mail</label><input type="email" id="alu-email" placeholder="seu@email.com" autocomplete="email"></div>
+      <div class="fg"><label>Senha</label><input type="password" id="alu-pass" placeholder="sua senha" autocomplete="current-password"></div>
       <button class="btn" id="btn-alu">Entrar</button>
       <p class="hint">Use o e-mail e senha cadastrados pela equipe</p>
     </div>
@@ -191,7 +192,7 @@ tr:hover td{background:rgba(255,255,255,.015);}
         <div id="perfil-content"></div>
       </div>
       <div id="pg-acoes" class="pg">
-        <p class="ptitle">Minhas Acoes</p><p class="psub">Historico de todas as suas acoes.</p>
+        <p class="ptitle">Minhas Acoes</p><p class="psub">Historico de todas as suas acoes e status.</p>
         <div class="tw" id="acoes-table"></div>
       </div>
       <div id="pg-reportar" class="pg">
@@ -200,7 +201,7 @@ tr:hover td{background:rgba(255,255,255,.015);}
         <div style="background:var(--bg2);border:1px solid var(--brd);border-radius:var(--rl);padding:22px;max-width:500px">
           <div class="fg"><label>Tipo de Acao</label>
             <select id="rep-tipo">
-              <optgroup label="Onboarding — Fase Inicio (10 pts cada)">
+              <optgroup label="Onboarding - Fase Inicio (10 pts cada)">
                 <option value="ob_nutror">Acessar plataforma Nutror (+10 pts)</option>
                 <option value="ob_facebook">Entrar na comunidade do Facebook (+10 pts)</option>
                 <option value="ob_boasvindas">Postar boas-vindas na comunidade (+10 pts)</option>
@@ -212,6 +213,8 @@ tr:hover td{background:rgba(255,255,255,.015);}
                 <option value="tarefa_1">1a tarefa postada (+20 pts)</option>
                 <option value="tarefa_5">Marco de 5 tarefas (+50 pts)</option>
                 <option value="certificado">Certificado 23 tarefas (+100 pts)</option>
+                <option value="aula_apoio">Participar da aula de apoio (+10 pts)</option>
+                <option value="nutror_50">50% das aulas assistidas no Nutror (+50 pts)</option>
                 <option value="antes_depois">Post antes/depois de paciente (+30 pts)</option>
                 <option value="falar_curso">Falar sobre o curso nas redes (+40 pts)</option>
                 <option value="compartilhar">Compartilhar conteudo do Ronaldo (+10 pts)</option>
@@ -220,7 +223,10 @@ tr:hover td{background:rgba(255,255,255,.015);}
               </optgroup>
             </select>
           </div>
-          <div class="fg"><label>Link ou comprovacao</label><textarea id="rep-obs" placeholder="Cole o link do post, print ou descricao da acao realizada."></textarea></div>
+          <div class="fg" id="obs-hint-wrap">
+            <label>Link ou comprovacao</label>
+            <textarea id="rep-obs" placeholder="Cole o link do post, descricao da acao, ou para aula de apoio: dia e tema da aula."></textarea>
+          </div>
           <div class="wbox">Reportar acoes somente as <strong style="color:var(--tx)">sextas-feiras</strong>. A equipe validara em breve.</div>
           <button class="btn" style="width:auto;padding:11px 24px" id="btn-rep">Enviar para Validacao</button>
         </div>
@@ -253,7 +259,7 @@ tr:hover td{background:rgba(255,255,255,.015);}
   <div class="modal">
     <p class="mtitle">Validar Acao</p>
     <div class="minfo" id="val-info"></div>
-    <div class="fg"><label>Justificativa (obrigatoria para recusa)</label><textarea id="val-just" placeholder="Motivo da recusa..."></textarea></div>
+    <div class="fg"><label>Justificativa (obrigatoria para recusa)</label><textarea id="val-just" placeholder="Motivo da recusa — o aluno ira visualizar este texto."></textarea></div>
     <div class="mfoot">
       <button class="btn2" id="btn-cancel-val">Cancelar</button>
       <button class="btn-err" id="btn-rec">Recusar</button>
@@ -268,13 +274,14 @@ tr:hover td{background:rgba(255,255,255,.015);}
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script>
 var db,user=null,aluno=null,acaoId=null,A=[],AC=[];
-var PONTOS={ob_nutror:10,ob_facebook:10,ob_boasvindas:10,ob_zoom:10,ob_whatsapp:10,indicacao:200,tarefa_1:20,tarefa_5:50,certificado:100,antes_depois:30,falar_curso:40,compartilhar:10,contribuicao:20,compra_imersao:50};
-var LABEL={ob_nutror:'Acessar plataforma Nutror',ob_facebook:'Entrar na comunidade do Facebook',ob_boasvindas:'Postar boas-vindas na comunidade',ob_zoom:'Baixar o Zoom',ob_whatsapp:'Entrar no grupo de WhatsApp',indicacao:'Indicacao de novo aluno',tarefa_1:'1a tarefa postada',tarefa_5:'Marco de 5 tarefas',certificado:'Certificado 23 tarefas',antes_depois:'Post antes/depois',falar_curso:'Falar sobre o curso',compartilhar:'Compartilhar conteudo',contribuicao:'Contribuicao na comunidade',compra_imersao:'Comprou nova imersao'};
-var CAT={ob_nutror:'I',ob_facebook:'I',ob_boasvindas:'I',ob_zoom:'I',ob_whatsapp:'I',indicacao:'M',tarefa_1:'A',tarefa_5:'A',certificado:'C',antes_depois:'V',falar_curso:'V',compartilhar:'V',contribuicao:'A',compra_imersao:'A'};
+var PONTOS={ob_nutror:10,ob_facebook:10,ob_boasvindas:10,ob_zoom:10,ob_whatsapp:10,indicacao:200,tarefa_1:20,tarefa_5:50,certificado:100,aula_apoio:10,nutror_50:50,antes_depois:30,falar_curso:40,compartilhar:10,contribuicao:20,compra_imersao:50};
+var LABEL={ob_nutror:'Acessar plataforma Nutror',ob_facebook:'Entrar na comunidade do Facebook',ob_boasvindas:'Postar boas-vindas na comunidade',ob_zoom:'Baixar o Zoom',ob_whatsapp:'Entrar no grupo de WhatsApp',indicacao:'Indicacao de novo aluno',tarefa_1:'1a tarefa postada',tarefa_5:'Marco de 5 tarefas',certificado:'Certificado 23 tarefas',aula_apoio:'Participar da aula de apoio',nutror_50:'50% das aulas no Nutror',antes_depois:'Post antes/depois',falar_curso:'Falar sobre o curso',compartilhar:'Compartilhar conteudo',contribuicao:'Contribuicao na comunidade',compra_imersao:'Comprou nova imersao'};
+var CAT={ob_nutror:'I',ob_facebook:'I',ob_boasvindas:'I',ob_zoom:'I',ob_whatsapp:'I',indicacao:'M',tarefa_1:'A',tarefa_5:'A',certificado:'C',aula_apoio:'A',nutror_50:'A',antes_depois:'V',falar_curso:'V',compartilhar:'V',contribuicao:'A',compra_imersao:'A'};
 var OB=[{id:'ob_nutror',nome:'Plataforma Nutror',desc:'Acessar a plataforma Nutror e conferir se todo o conteudo do curso esta disponivel.'},{id:'ob_facebook',nome:'Comunidade no Facebook',desc:'Entrar na comunidade oficial do Mecanismo X no Facebook.'},{id:'ob_boasvindas',nome:'Boas-vindas na comunidade',desc:'Postar uma mensagem de apresentacao com uma foto e sua cidade.'},{id:'ob_zoom',nome:'Baixar o Zoom',desc:'Instalar o Zoom no celular ou computador para as aulas ao vivo.'},{id:'ob_whatsapp',nome:'Grupo de WhatsApp da turma',desc:'Entrar no grupo de avisos da sua turma no WhatsApp.'}];
 var ORDEM=['INICIO','BRANCA','AMARELA','MARROM','PRETA'];
 var META={INICIO:50,BRANCA:400,AMARELA:800,MARROM:1500};
 var BENS={BRANCA:['Selo exclusivo do Clube enviado no privado','Mencao de boas-vindas na comunidade','Acesso a 1 imersao do acervo a escolha'],AMARELA:['Destaque mensal no Instagram e na comunidade','Acesso a 2 imersoes do acervo a escolha','Desconto de 20% no proximo lancamento'],MARROM:['Post dedicado no Instagram com seu caso clinico','Acesso antecipado + 30% off em lancamentos','Titulo de Tutor Oficial da Comunidade'],PRETA:['Acesso a todas as imersoes novas gratuitamente por 12 meses','Destaque no perfil do Instagram do Ronaldo','Live exclusiva com Ronaldo contando a sua historia']};
+
 function L(id){return document.getElementById(id);}
 function showLoad(m){L('ltxt').textContent=m||'Carregando...';L('load').classList.add('on');}
 function hideLoad(){L('load').classList.remove('on');}
@@ -294,7 +301,8 @@ function goPage(pgId){
   document.querySelectorAll('.ni').forEach(function(n){n.classList.remove('on');});
   var pg=L('pg-'+pgId);if(pg)pg.classList.add('on');
   document.querySelectorAll('[data-pg="'+pgId+'"]').forEach(function(n){n.classList.add('on');});
-  ({dashboard:renderDash,validar:renderVal,alunos:renderAlunos,'ranking-adm':renderRankAdm,perfil:renderPerfil,acoes:renderAcoes,reportar:function(){},'ranking-alu':renderRankAlu,beneficios:renderBens})[pgId]&&({dashboard:renderDash,validar:renderVal,alunos:renderAlunos,'ranking-adm':renderRankAdm,perfil:renderPerfil,acoes:renderAcoes,reportar:function(){},'ranking-alu':renderRankAlu,beneficios:renderBens})[pgId]();
+  var r={dashboard:renderDash,validar:renderVal,alunos:renderAlunos,'ranking-adm':renderRankAdm,perfil:renderPerfil,acoes:renderAcoes,reportar:function(){},'ranking-alu':renderRankAlu,beneficios:renderBens};
+  if(r[pgId])r[pgId]();
 }
 function load(){return Promise.all([db.from('alunos').select('*').order('pontos_faixa',{ascending:false}),db.from('acoes').select('*').order('created_at',{ascending:false})]).then(function(r){A=r[0].data||[];AC=r[1].data||[];});}
 function initApp(){
@@ -304,39 +312,181 @@ function initApp(){
 }
 L('tab-adm').onclick=function(){L('tab-adm').classList.add('on');L('tab-alu').classList.remove('on');L('form-adm').style.display='';L('form-alu').style.display='none';};
 L('tab-alu').onclick=function(){L('tab-alu').classList.add('on');L('tab-adm').classList.remove('on');L('form-alu').style.display='';L('form-adm').style.display='none';};
-L('btn-adm').onclick=function(){var e=L('adm-email').value.trim(),p=L('adm-pass').value.trim(),ae=['admin','mecanismox.com.br'].join('@');if((e===ae||e==='admin')&&p==='mecanismo2024'){user={tipo:'admin',nome:'Duda - Suporte'};initApp();}else toast('Credenciais invalidas',true);};
-L('btn-alu').onclick=function(){var e=L('alu-email').value.trim(),p=L('alu-pass').value.trim();if(!e||!p){toast('Preencha email e senha',true);return;}showLoad('Verificando acesso...');db.from('alunos').select('*').eq('email',e).eq('senha',p).single().then(function(r){if(r.error||!r.data){toast('Email ou senha incorretos',true);hideLoad();return;}user={tipo:'aluno',nome:r.data.nome,alunoId:r.data.id};aluno=r.data;initApp();}).catch(function(){toast('Erro de conexao',true);hideLoad();});};
+L('btn-adm').onclick=function(){
+  var e=L('adm-email').value.trim(),p=L('adm-pass').value.trim();
+  var ae=['admin','mecanismox.com.br'].join('@');
+  if((e===ae||e==='admin')&&p==='mecanismo2024'){user={tipo:'admin',nome:'Duda - Suporte'};initApp();}
+  else toast('Credenciais invalidas',true);
+};
+L('btn-alu').onclick=function(){
+  var e=L('alu-email').value.trim(),p=L('alu-pass').value.trim();
+  if(!e||!p){toast('Preencha email e senha',true);return;}
+  showLoad('Verificando acesso...');
+  db.from('alunos').select('*').eq('email',e).eq('senha',p).single().then(function(r){
+    if(r.error||!r.data){toast('Email ou senha incorretos',true);hideLoad();return;}
+    user={tipo:'aluno',nome:r.data.nome,alunoId:r.data.id};aluno=r.data;initApp();
+  }).catch(function(){toast('Erro de conexao. Tente novamente.',true);hideLoad();});
+};
 L('btn-out').onclick=function(){user=null;aluno=null;switchScreen('login');};
 document.querySelectorAll('.ni').forEach(function(btn){btn.onclick=function(){goPage(this.dataset.pg);};});
+
+// Dica no placeholder conforme tipo
+L('rep-tipo').onchange=function(){
+  var placeholders={aula_apoio:'Ex: Aula de apoio dia 04/04 - tema: Avaliacao Postural',nutror_50:'Descreva: percentual atual de aulas concluidas no Nutror'};
+  var p=placeholders[this.value]||'Cole o link do post, descricao da acao realizada, etc.';
+  L('rep-obs').placeholder=p;
+};
+
 function renderDash(){
   L('dash-date').textContent=new Date().toLocaleDateString('pt-BR',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
   var pend=AC.filter(function(a){return a.status==='pendente';});
   var bF={INICIO:0,BRANCA:0,AMARELA:0,MARROM:0,PRETA:0};A.forEach(function(a){if(bF[a.faixa]!==undefined)bF[a.faixa]++;});
-  L('dash-cards').innerHTML='<div class="sc"><div class="sl">Total Alunos</div><div class="sv">'+A.length+'</div><div class="ss">membros</div></div><div class="sc"><div class="sl">Pendentes</div><div class="sv" style="color:var(--gold)">'+pend.length+'</div><div class="ss">aguardando</div></div><div class="sc"><div class="sl">Por Faixa</div><div class="sv" style="font-size:12px;line-height:2.1"><span style="color:var(--tx3)">'+bF.INICIO+' Inicio</span><br><span style="color:var(--branca)">'+bF.BRANCA+' Branca</span><br><span style="color:var(--amarela)">'+bF.AMARELA+' Amarela</span><br><span style="color:var(--marrom)">'+bF.MARROM+' Marrom</span><br><span style="color:var(--preta)">'+bF.PRETA+' Preta</span></div></div><div class="sc"><div class="sl">Validadas</div><div class="sv">'+AC.filter(function(a){return a.status==='validada';}).length+'</div><div class="ss">de '+AC.length+'</div></div>';
+  L('dash-cards').innerHTML='<div class="sc"><div class="sl">Total Alunos</div><div class="sv">'+A.length+'</div><div class="ss">membros</div></div>'
+    +'<div class="sc"><div class="sl">Pendentes</div><div class="sv" style="color:var(--gold)">'+pend.length+'</div><div class="ss">aguardando</div></div>'
+    +'<div class="sc"><div class="sl">Por Faixa</div><div class="sv" style="font-size:12px;line-height:2.1"><span style="color:var(--tx3)">'+bF.INICIO+' Inicio</span><br><span style="color:var(--branca)">'+bF.BRANCA+' Branca</span><br><span style="color:var(--amarela)">'+bF.AMARELA+' Amarela</span><br><span style="color:var(--marrom)">'+bF.MARROM+' Marrom</span><br><span style="color:var(--preta)">'+bF.PRETA+' Preta</span></div></div>'
+    +'<div class="sc"><div class="sl">Validadas</div><div class="sv">'+AC.filter(function(a){return a.status==='validada';}).length+'</div><div class="ss">de '+AC.length+'</div></div>';
   if(!pend.length){L('dash-pend').innerHTML='<div class="empty">Nenhuma acao pendente</div>';updateBadge(0);return;}
   L('dash-pend').innerHTML='<table><thead><tr><th>Aluno</th><th>Acao</th><th>Pts</th><th>Data</th><th></th></tr></thead><tbody>'+pend.slice(0,5).map(function(ac){var al=A.find(function(x){return x.id===ac.aluno_id;});return '<tr><td class="tn">'+(al?al.nome:'--')+'</td><td>'+pill(ac.tipo)+' '+LABEL[ac.tipo]+'</td><td class="tp">+'+ac.pontos+'</td><td>'+fmtD(ac.data||ac.created_at)+'</td><td><button class="btn-ok" style="font-size:12px;padding:6px 12px" onclick="abrirV(''+ac.id+'')">Validar</button></td></tr>';}).join('')+'</tbody></table>';
   updateBadge(pend.length);
 }
 function updateBadge(n){var nav=L('nav-val');if(!nav)return;var ex=nav.querySelector('.nbadge');if(ex)ex.remove();if(n>0)nav.innerHTML+='<span class="nbadge">'+n+'</span>';}
+
 function renderVal(){
   var pend=AC.filter(function(a){return a.status==='pendente';});
   if(!pend.length){L('val-table').innerHTML='<div class="empty">Nenhuma acao pendente</div>';return;}
   L('val-table').innerHTML='<table><thead><tr><th>Aluno</th><th>Turma</th><th>Cat.</th><th>Acao</th><th>Obs</th><th>Pts</th><th>Data</th><th></th></tr></thead><tbody>'+pend.map(function(ac){var al=A.find(function(x){return x.id===ac.aluno_id;});return '<tr><td class="tn">'+(al?al.nome:'--')+'</td><td style="color:var(--tx2)">'+(al?al.turma:'--')+'</td><td>'+pill(ac.tipo)+'</td><td>'+LABEL[ac.tipo]+'</td><td style="color:var(--tx2);font-size:12px">'+(ac.obs||'--')+'</td><td class="tp">+'+ac.pontos+'</td><td>'+fmtD(ac.data||ac.created_at)+'</td><td style="display:flex;gap:6px"><button class="btn-ok" style="font-size:12px;padding:6px 12px" onclick="abrirV(''+ac.id+'')">Validar</button><button class="btn-err" style="font-size:12px;padding:6px 12px" onclick="abrirR(''+ac.id+'')">Recusar</button></td></tr>';}).join('')+'</tbody></table>';
 }
-window.abrirV=function(id){acaoId=id;var ac=AC.find(function(a){return a.id===id;});var al=A.find(function(a){return a.id===ac.aluno_id;});var res=calcSub(al.faixa,al.pontos_faixa,ac.pontos);L('val-info').innerHTML='<strong style="color:var(--tx)">'+(al?al.nome:'--')+'</strong> - '+(al?al.turma:'')+'<br>Acao: <strong style="color:var(--tx)">'+LABEL[ac.tipo]+'</strong><br>Pontos: <strong style="color:var(--gold)">+'+ac.pontos+' pts</strong><br>Faixa atual: '+fb(al.faixa)+' - '+al.pontos_faixa+' pts acumulados<br>'+(res.subiu?'<strong style="color:var(--teal)">Subira para a faixa '+res.novaFaixa+'! Pontos zerados.</strong>':'Apos: '+(al.pontos_faixa+ac.pontos)+(metaF(al.faixa)?'/'+metaF(al.faixa):'')+' pts')+(ac.obs?'<br>Obs: '+ac.obs:'');L('val-just').value='';openM('modal-val');};
-window.abrirR=function(id){acaoId=id;var ac=AC.find(function(a){return a.id===id;});var al=A.find(function(a){return a.id===ac.aluno_id;});L('val-info').innerHTML='<strong style="color:var(--tx)">'+(al?al.nome:'--')+'</strong><br>Acao: '+LABEL[ac.tipo];L('val-just').value='';openM('modal-val');};
+window.abrirV=function(id){
+  acaoId=id;
+  var ac=AC.find(function(a){return a.id===id;});
+  var al=A.find(function(a){return a.id===ac.aluno_id;});
+  var res=calcSub(al.faixa,al.pontos_faixa,ac.pontos);
+  L('val-info').innerHTML='<strong style="color:var(--tx)">'+(al?al.nome:'--')+'</strong> - '+(al?al.turma:'')
+    +'<br>Acao: <strong style="color:var(--tx)">'+LABEL[ac.tipo]+'</strong>'
+    +'<br>Pontos: <strong style="color:var(--gold)">+'+ac.pontos+' pts</strong>'
+    +'<br>Faixa atual: '+fb(al.faixa)+' - '+al.pontos_faixa+' pts acumulados'
+    +'<br>'+(res.subiu?'<strong style="color:var(--teal)">Subira para a faixa '+res.novaFaixa+'! Pontos zerados.</strong>':'Apos: '+(al.pontos_faixa+ac.pontos)+(metaF(al.faixa)?'/'+metaF(al.faixa):'')+' pts')
+    +(ac.obs?'<br>Obs: '+ac.obs:'');
+  L('val-just').value='';openM('modal-val');
+};
+window.abrirR=function(id){
+  acaoId=id;
+  var ac=AC.find(function(a){return a.id===id;});
+  var al=A.find(function(a){return a.id===ac.aluno_id;});
+  L('val-info').innerHTML='<strong style="color:var(--tx)">'+(al?al.nome:'--')+'</strong><br>Acao: '+LABEL[ac.tipo]+(ac.obs?'<br>Obs: '+ac.obs:'');
+  L('val-just').value='';openM('modal-val');
+};
 L('btn-cancel-val').onclick=function(){closeM('modal-val');};
-function decidir(d){var just=L('val-just').value.trim();if(d==='recusada'&&!just){toast('Informe o motivo da recusa',true);return;}showLoad('Processando...');var ac=AC.find(function(a){return a.id===acaoId;});db.from('acoes').update({status:d,justificativa:just}).eq('id',acaoId).then(function(){if(d==='validada'){var al=A.find(function(a){return a.id===ac.aluno_id;});var res=calcSub(al.faixa,al.pontos_faixa,ac.pontos);return db.from('alunos').update({pontos_faixa:res.pts,faixa:res.novaFaixa}).eq('id',al.id).then(function(){if(res.subiu)toast(al.nome+' conquistou a faixa '+res.novaFaixa+'! Pontos zerados.');else toast('Acao validada e pontos atribuidos');});}else toast('Acao recusada');}).then(function(){closeM('modal-val');acaoId=null;return load();}).then(function(){renderVal();renderDash();hideLoad();}).catch(function(){toast('Erro ao processar',true);hideLoad();});}
-L('btn-val').onclick=function(){decidir('validada');};L('btn-rec').onclick=function(){decidir('recusada');};
-function renderAlunos(){L('alu-table').innerHTML='<table><thead><tr><th>#</th><th>Nome</th><th>Email</th><th>Turma</th><th>Pts</th><th>Meta</th><th>Faixa</th><th>WhatsApp</th></tr></thead><tbody>'+A.map(function(a,i){var ms=a.faixa==='PRETA'?'max':a.pontos_faixa+'/'+(metaF(a.faixa)||'--');return '<tr><td style="color:var(--tx3)">'+(i+1)+'</td><td class="tn">'+a.nome+'</td><td style="color:var(--tx2);font-size:12px">'+a.email+'</td><td style="color:var(--tx2)">'+a.turma+'</td><td class="tp">'+a.pontos_faixa+'</td><td style="color:var(--tx3);font-size:12px">'+ms+'</td><td>'+fb(a.faixa)+'</td><td style="color:var(--tx2);font-size:12px">'+(a.whatsapp||'--')+'</td></tr>';}).join('')+'</tbody></table>';}
-L('btn-novo').onclick=function(){openM('modal-alu');};L('btn-cancel-alu').onclick=function(){closeM('modal-alu');};
-L('btn-save-alu').onclick=function(){var nome=L('mn').value.trim(),email=L('me').value.trim(),senha=L('ms').value.trim(),turma=L('mt').value.trim(),wp=L('mw').value.trim();if(!nome||!email||!senha||!turma){toast('Preencha todos os campos',true);return;}showLoad('Cadastrando...');db.from('alunos').insert({nome:nome,email:email,senha:senha,turma:turma,whatsapp:wp,pontos_faixa:0,faixa:'INICIO'}).then(function(r){if(r.error){toast(r.error.message.includes('unique')?'Email ja cadastrado':'Erro ao cadastrar',true);hideLoad();return;}closeM('modal-alu');['mn','me','ms','mt','mw'].forEach(function(id){L(id).value='';});return load().then(function(){renderAlunos();toast(nome+' cadastrado!');hideLoad();});}).catch(function(){toast('Erro',true);hideLoad();});};
-function renderRankAdm(){var s=[].concat(A).sort(function(a,b){return b.pontos_faixa-a.pontos_faixa;});L('rank-adm').innerHTML=s.map(function(a,i){var pos=i+1,cls=pos===1?'r1':pos===2?'r2':pos===3?'r3':'ro',m=metaF(a.faixa),pct=m>0?Math.min(100,Math.round((a.pontos_faixa/m)*100)):100,px=proxF(a.faixa);return '<div class="rr"><div class="rnum '+cls+'">'+pos+'</div><div class="rinfo"><div class="rname">'+a.nome+'</div><div class="rturma">'+a.turma+' - '+fb(a.faixa)+'</div><div style="margin-top:6px;max-width:180px"><div class="ptrack"><div class="pfill" style="width:'+pct+'%"></div></div><div class="plabels"><span>'+a.pontos_faixa+(m>0?'/'+m:'')+'</span><span>'+(px?'prox: '+px:'Faixa max')+'</span></div></div></div><div class="rpts">'+a.pontos_faixa+'</div></div>';}).join('');}
-function renderPerfil(){db.from('alunos').select('*').eq('id',user.alunoId).single().then(function(r){if(r.data){aluno=r.data;var idx=A.findIndex(function(x){return x.id===r.data.id;});if(idx>=0)A[idx]=r.data;}var a=aluno;if(!a)return;var html='';if(a.faixa==='INICIO'){var mn=AC.filter(function(x){return x.aluno_id===a.id;});var concl=OB.filter(function(s){return mn.some(function(ac){return ac.tipo===s.id&&ac.status==='validada';});});var pct=Math.round((concl.length/OB.length)*100);html+='<div class="phero"><div class="pav">'+a.nome.charAt(0)+'</div><div class="pinfo"><div style="font-family:Syne;font-size:18px;font-weight:700">'+a.nome+'</div><div style="font-size:13px;color:var(--tx2);margin:4px 0 10px">'+a.turma+'</div>'+fb(a.faixa)+'</div></div>';html+='<div class="inicio-box"><div class="inicio-title">Fase de Inicio - Conquiste a Faixa Branca</div><div class="inicio-sub">Complete as 5 acoes de onboarding para conquistar sua primeira faixa. Cada acao vale 10 pontos.</div>';OB.forEach(function(s){var done=mn.some(function(ac){return ac.tipo===s.id&&ac.status==='validada';});var pend=!done&&mn.some(function(ac){return ac.tipo===s.id&&ac.status==='pendente';});html+='<div class="inicio-step"><div class="inicio-num '+(done?'done':pend?'pend':'')+'">'+(done?'OK':pend?'...':'')+'</div><div><div class="inicio-nome">'+s.nome+(done?' <span style="color:var(--teal);font-size:11px">Validado</span>':pend?' <span style="color:var(--amarela);font-size:11px">Aguardando validacao</span>':'')+'</div><div class="inicio-desc">'+s.desc+'</div></div></div>';});html+='<div class="prog-bar-wrap"><div class="prog-label"><span>'+concl.length+' de 5 concluidas</span><span>'+a.pontos_faixa+'/50 pts</span></div><div class="prog-bar"><div class="prog-fill" style="width:'+pct+'%"></div></div></div></div>';}else{var m=metaF(a.faixa),pct2=a.faixa==='PRETA'?100:Math.min(100,Math.round((a.pontos_faixa/m)*100)),px=proxF(a.faixa),flt=m-a.pontos_faixa;html+='<div class="phero"><div class="pav">'+a.nome.charAt(0)+'</div><div class="pinfo"><div style="font-family:Syne;font-size:18px;font-weight:700">'+a.nome+'</div><div style="font-size:13px;color:var(--tx2);margin:4px 0 10px">'+a.turma+'</div>'+fb(a.faixa)+'<div class="ptrack" style="margin-top:13px"><div class="pfill" style="width:'+pct2+'%"></div></div><div class="plabels"><span>'+(a.faixa==='PRETA'?'Faixa maxima atingida!':px?'Faltam '+flt+' pts para '+px:'')+'</span><span>'+(a.faixa!=='PRETA'?a.pontos_faixa+'/'+m:'')+'</span></div></div><div style="text-align:right"><div style="font-family:Syne;font-size:38px;font-weight:800;color:var(--gold);line-height:1">'+a.pontos_faixa+'</div><div style="font-size:12px;color:var(--tx2);margin-top:4px">pontos na faixa</div></div></div>';var mn2=AC.filter(function(x){return x.aluno_id===a.id;}),pos=[].concat(A).sort(function(x,y){return y.pontos_faixa-x.pontos_faixa;}).findIndex(function(x){return x.id===a.id;})+1;html+='<div class="cgrid"><div class="sc"><div class="sl">Validadas</div><div class="sv">'+mn2.filter(function(x){return x.status==='validada';}).length+'</div></div><div class="sc"><div class="sl">Pendentes</div><div class="sv" style="color:var(--gold)">'+mn2.filter(function(x){return x.status==='pendente';}).length+'</div></div><div class="sc"><div class="sl">Indicacoes</div><div class="sv">'+mn2.filter(function(x){return x.tipo==='indicacao'&&x.status==='validada';}).length+'</div></div><div class="sc"><div class="sl">Posicao</div><div class="sv">'+pos+'</div></div></div>';}L('perfil-content').innerHTML=html;});}
-function renderAcoes(){var mn=AC.filter(function(a){return a.aluno_id===user.alunoId;});if(!mn.length){L('acoes-table').innerHTML='<div class="empty">Nenhuma acao registrada ainda</div>';return;}L('acoes-table').innerHTML='<table><thead><tr><th>Cat.</th><th>Acao</th><th>Obs</th><th>Pts</th><th>Data</th><th>Status</th></tr></thead><tbody>'+mn.map(function(ac){return '<tr><td>'+pill(ac.tipo)+'</td><td>'+LABEL[ac.tipo]+'</td><td style="color:var(--tx2);font-size:12px">'+(ac.obs||'--')+'</td><td class="tp">+'+ac.pontos+'</td><td>'+fmtD(ac.data||ac.created_at)+'</td><td>'+stBadge(ac.status)+'</td></tr>';}).join('')+'</tbody></table>';}
-L('btn-rep').onclick=function(){var tipo=L('rep-tipo').value,obs=L('rep-obs').value.trim();if(!obs){toast('Adicione um link ou comprovacao',true);return;}showLoad('Enviando...');db.from('acoes').insert({aluno_id:user.alunoId,tipo:tipo,pontos:PONTOS[tipo],obs:obs,status:'pendente',data:new Date().toISOString().split('T')[0]}).then(function(){L('rep-obs').value='';return load();}).then(function(){hideLoad();toast('Acao enviada! Aguarde a validacao.');goPage('acoes');}).catch(function(){toast('Erro ao enviar',true);hideLoad();});};
-function renderRankAlu(){var s=[].concat(A).sort(function(a,b){return b.pontos_faixa-a.pontos_faixa;});L('rank-alu').innerHTML=s.map(function(a,i){var pos=i+1,cls=pos===1?'r1':pos===2?'r2':pos===3?'r3':'ro',isMe=a.id===user.alunoId;return '<div class="rr" style="'+(isMe?'background:var(--gold-bg);border-left:2px solid var(--gold)':'')+'"><div class="rnum '+cls+'">'+pos+'</div><div class="rinfo"><div class="rname">'+a.nome+(isMe?' <span style="color:var(--gold);font-size:11px">- voce</span>':'')+'</div><div class="rturma">'+a.turma+' - '+fb(a.faixa)+'</div></div><div class="rpts">'+a.pontos_faixa+'</div></div>';}).join('');}
-function renderBens(){if(!aluno)return;var fv=['BRANCA','AMARELA','MARROM','PRETA'],idxA=fv.indexOf(aluno.faixa),corF={BRANCA:'var(--branca)',AMARELA:'var(--amarela)',MARROM:'var(--marrom)',PRETA:'var(--preta)'};L('bens-list').innerHTML=fv.map(function(f,i){var isA=f===aluno.faixa,ok=i<=idxA;var items=BENS[f].map(function(b){return '<div style="display:flex;gap:9px;font-size:13px;color:'+(ok?'var(--tx)':'var(--tx3)')+'"><span style="color:'+corF[f]+'">*</span>'+b+'</div>';}).join('');return '<div style="background:var(--bg2);border:1px solid '+(isA?corF[f]:'var(--brd)')+';border-radius:var(--rl);padding:18px;margin-bottom:12px;opacity:'+(ok?1:.45)+'"><div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap">'+fb(f)+'<span style="font-size:12px;color:var(--tx2)">meta: '+META[f]+' pts</span>'+(isA?'<span style="font-size:11px;background:var(--gold-bg);color:var(--gold);border:1px solid var(--gold-border);padding:2px 8px;border-radius:4px;margin-left:auto">Sua faixa</span>':'')+'</div><div style="display:flex;flex-direction:column;gap:7px">'+items+'</div></div>';}).join('');}
+function decidir(d){
+  var just=L('val-just').value.trim();
+  if(d==='recusada'&&!just){toast('Informe o motivo da recusa — o aluno ira visualizar',true);return;}
+  showLoad('Processando...');
+  var ac=AC.find(function(a){return a.id===acaoId;});
+  db.from('acoes').update({status:d,justificativa:just}).eq('id',acaoId).then(function(){
+    if(d==='validada'){
+      var al=A.find(function(a){return a.id===ac.aluno_id;});
+      var res=calcSub(al.faixa,al.pontos_faixa,ac.pontos);
+      return db.from('alunos').update({pontos_faixa:res.pts,faixa:res.novaFaixa}).eq('id',al.id).then(function(){
+        if(res.subiu)toast(al.nome+' conquistou a faixa '+res.novaFaixa+'! Pontos zerados.');
+        else toast('Acao validada e pontos atribuidos');
+      });
+    }else toast('Acao recusada');
+  }).then(function(){closeM('modal-val');acaoId=null;return load();}).then(function(){renderVal();renderDash();hideLoad();}).catch(function(){toast('Erro ao processar',true);hideLoad();});
+}
+L('btn-val').onclick=function(){decidir('validada');};
+L('btn-rec').onclick=function(){decidir('recusada');};
+
+function renderAlunos(){
+  L('alu-table').innerHTML='<table><thead><tr><th>#</th><th>Nome</th><th>Email</th><th>Turma</th><th>Pts</th><th>Meta</th><th>Faixa</th><th>WhatsApp</th></tr></thead><tbody>'+A.map(function(a,i){var ms=a.faixa==='PRETA'?'max':a.pontos_faixa+'/'+(metaF(a.faixa)||'--');return '<tr><td style="color:var(--tx3)">'+(i+1)+'</td><td class="tn">'+a.nome+'</td><td style="color:var(--tx2);font-size:12px">'+a.email+'</td><td style="color:var(--tx2)">'+a.turma+'</td><td class="tp">'+a.pontos_faixa+'</td><td style="color:var(--tx3);font-size:12px">'+ms+'</td><td>'+fb(a.faixa)+'</td><td style="color:var(--tx2);font-size:12px">'+(a.whatsapp||'--')+'</td></tr>';}).join('')+'</tbody></table>';
+}
+L('btn-novo').onclick=function(){openM('modal-alu');};
+L('btn-cancel-alu').onclick=function(){closeM('modal-alu');};
+L('btn-save-alu').onclick=function(){
+  var nome=L('mn').value.trim(),email=L('me').value.trim(),senha=L('ms').value.trim(),turma=L('mt').value.trim(),wp=L('mw').value.trim();
+  if(!nome||!email||!senha||!turma){toast('Preencha todos os campos obrigatorios',true);return;}
+  showLoad('Cadastrando...');
+  db.from('alunos').insert({nome:nome,email:email,senha:senha,turma:turma,whatsapp:wp,pontos_faixa:0,faixa:'INICIO'}).then(function(r){
+    if(r.error){toast(r.error.message.includes('unique')?'Email ja cadastrado':'Erro ao cadastrar',true);hideLoad();return;}
+    closeM('modal-alu');['mn','me','ms','mt','mw'].forEach(function(id){L(id).value='';});
+    return load().then(function(){renderAlunos();toast(nome+' cadastrado com sucesso!');hideLoad();});
+  }).catch(function(){toast('Erro ao cadastrar',true);hideLoad();});
+};
+
+function renderRankAdm(){
+  var s=[].concat(A).sort(function(a,b){return b.pontos_faixa-a.pontos_faixa;});
+  L('rank-adm').innerHTML=s.map(function(a,i){
+    var pos=i+1,cls=pos===1?'r1':pos===2?'r2':pos===3?'r3':'ro';
+    var m=metaF(a.faixa),pct=m>0?Math.min(100,Math.round((a.pontos_faixa/m)*100)):100,px=proxF(a.faixa);
+    return '<div class="rr"><div class="rnum '+cls+'">'+pos+'</div><div class="rinfo"><div class="rname">'+a.nome+'</div><div class="rturma">'+a.turma+' - '+fb(a.faixa)+'</div><div style="margin-top:6px;max-width:180px"><div class="ptrack"><div class="pfill" style="width:'+pct+'%"></div></div><div class="plabels"><span>'+a.pontos_faixa+(m>0?'/'+m:'')+'</span><span>'+(px?'prox: '+px:'Faixa max')+'</span></div></div></div><div class="rpts">'+a.pontos_faixa+'</div></div>';
+  }).join('');
+}
+
+function renderPerfil(){
+  db.from('alunos').select('*').eq('id',user.alunoId).single().then(function(r){
+    if(r.data){aluno=r.data;var idx=A.findIndex(function(x){return x.id===r.data.id;});if(idx>=0)A[idx]=r.data;}
+    var a=aluno;if(!a)return;
+    var html='';
+    if(a.faixa==='INICIO'){
+      var mn=AC.filter(function(x){return x.aluno_id===a.id;});
+      var concl=OB.filter(function(s){return mn.some(function(ac){return ac.tipo===s.id&&ac.status==='validada';});});
+      var pct=Math.round((concl.length/OB.length)*100);
+      html+='<div class="phero"><div class="pav">'+a.nome.charAt(0)+'</div><div class="pinfo"><div style="font-family:Syne;font-size:18px;font-weight:700">'+a.nome+'</div><div style="font-size:13px;color:var(--tx2);margin:4px 0 10px">'+a.turma+'</div>'+fb(a.faixa)+'</div></div>';
+      html+='<div class="inicio-box"><div class="inicio-title">Fase de Inicio - Conquiste a Faixa Branca</div><div class="inicio-sub">Complete as 5 acoes de onboarding para conquistar sua primeira faixa. Cada acao vale 10 pontos. Ao atingir 50 pontos voce conquista a Faixa Branca!</div>';
+      OB.forEach(function(s){
+        var done=mn.some(function(ac){return ac.tipo===s.id&&ac.status==='validada';});
+        var pend=!done&&mn.some(function(ac){return ac.tipo===s.id&&ac.status==='pendente';});
+        html+='<div class="inicio-step"><div class="inicio-num '+(done?'done':pend?'pend':'')+'">'+(done?'OK':pend?'...':'')+'</div><div><div class="inicio-nome">'+s.nome+(done?' <span style="color:var(--teal);font-size:11px">Validado</span>':pend?' <span style="color:var(--amarela);font-size:11px">Aguardando validacao</span>':'')+'</div><div class="inicio-desc">'+s.desc+'</div></div></div>';
+      });
+      html+='<div class="prog-bar-wrap"><div class="prog-label"><span>'+concl.length+' de 5 concluidas</span><span>'+a.pontos_faixa+'/50 pts</span></div><div class="prog-bar"><div class="prog-fill" style="width:'+pct+'%"></div></div></div></div>';
+    }else{
+      var m=metaF(a.faixa),pct2=a.faixa==='PRETA'?100:Math.min(100,Math.round((a.pontos_faixa/m)*100));
+      var px=proxF(a.faixa),flt=m-a.pontos_faixa;
+      html+='<div class="phero"><div class="pav">'+a.nome.charAt(0)+'</div><div class="pinfo"><div style="font-family:Syne;font-size:18px;font-weight:700">'+a.nome+'</div><div style="font-size:13px;color:var(--tx2);margin:4px 0 10px">'+a.turma+'</div>'+fb(a.faixa)+'<div class="ptrack" style="margin-top:13px"><div class="pfill" style="width:'+pct2+'%"></div></div><div class="plabels"><span>'+(a.faixa==='PRETA'?'Faixa maxima atingida!':px?'Faltam '+flt+' pts para '+px:'')+'</span><span>'+(a.faixa!=='PRETA'?a.pontos_faixa+'/'+m:'')+'</span></div></div><div style="text-align:right"><div style="font-family:Syne;font-size:38px;font-weight:800;color:var(--gold);line-height:1">'+a.pontos_faixa+'</div><div style="font-size:12px;color:var(--tx2);margin-top:4px">pontos na faixa</div></div></div>';
+      var mn2=AC.filter(function(x){return x.aluno_id===a.id;});
+      var pos=[].concat(A).sort(function(x,y){return y.pontos_faixa-x.pontos_faixa;}).findIndex(function(x){return x.id===a.id;})+1;
+      html+='<div class="cgrid"><div class="sc"><div class="sl">Validadas</div><div class="sv">'+mn2.filter(function(x){return x.status==='validada';}).length+'</div></div><div class="sc"><div class="sl">Pendentes</div><div class="sv" style="color:var(--gold)">'+mn2.filter(function(x){return x.status==='pendente';}).length+'</div></div><div class="sc"><div class="sl">Indicacoes</div><div class="sv">'+mn2.filter(function(x){return x.tipo==='indicacao'&&x.status==='validada';}).length+'</div></div><div class="sc"><div class="sl">Posicao</div><div class="sv">'+pos+'</div></div></div>';
+    }
+    L('perfil-content').innerHTML=html;
+  });
+}
+
+function renderAcoes(){
+  var mn=AC.filter(function(a){return a.aluno_id===user.alunoId;});
+  if(!mn.length){L('acoes-table').innerHTML='<div class="empty">Nenhuma acao registrada ainda</div>';return;}
+  L('acoes-table').innerHTML='<table><thead><tr><th>Cat.</th><th>Acao</th><th>Obs</th><th>Pts</th><th>Data</th><th>Status</th></tr></thead><tbody>'+mn.map(function(ac){
+    var recusaHtml=ac.status==='recusada'&&ac.justificativa?'<div class="recusa-box">Motivo: '+ac.justificativa+'</div>':'';
+    return '<tr><td>'+pill(ac.tipo)+'</td><td>'+LABEL[ac.tipo]+'</td><td style="color:var(--tx2);font-size:12px">'+(ac.obs||'--')+'</td><td class="tp">+'+ac.pontos+'</td><td>'+fmtD(ac.data||ac.created_at)+'</td><td>'+stBadge(ac.status)+recusaHtml+'</td></tr>';
+  }).join('')+'</tbody></table>';
+}
+
+L('btn-rep').onclick=function(){
+  var tipo=L('rep-tipo').value,obs=L('rep-obs').value.trim();
+  if(!obs){toast('Adicione uma comprovacao ou descricao da acao',true);return;}
+  showLoad('Enviando...');
+  db.from('acoes').insert({aluno_id:user.alunoId,tipo:tipo,pontos:PONTOS[tipo],obs:obs,status:'pendente',data:new Date().toISOString().split('T')[0]}).then(function(){
+    L('rep-obs').value='';return load();
+  }).then(function(){hideLoad();toast('Acao enviada! Aguarde a validacao da equipe.');goPage('acoes');}).catch(function(){toast('Erro ao enviar',true);hideLoad();});
+};
+
+function renderRankAlu(){
+  var s=[].concat(A).sort(function(a,b){return b.pontos_faixa-a.pontos_faixa;});
+  L('rank-alu').innerHTML=s.map(function(a,i){
+    var pos=i+1,cls=pos===1?'r1':pos===2?'r2':pos===3?'r3':'ro',isMe=a.id===user.alunoId;
+    return '<div class="rr" style="'+(isMe?'background:var(--gold-bg);border-left:2px solid var(--gold)':'')+'"><div class="rnum '+cls+'">'+pos+'</div><div class="rinfo"><div class="rname">'+a.nome+(isMe?' <span style="color:var(--gold);font-size:11px">- voce</span>':'')+'</div><div class="rturma">'+a.turma+' - '+fb(a.faixa)+'</div></div><div class="rpts">'+a.pontos_faixa+'</div></div>';
+  }).join('');
+}
+
+function renderBens(){
+  if(!aluno)return;
+  var fv=['BRANCA','AMARELA','MARROM','PRETA'],idxA=fv.indexOf(aluno.faixa);
+  var corF={BRANCA:'var(--branca)',AMARELA:'var(--amarela)',MARROM:'var(--marrom)',PRETA:'var(--preta)'};
+  L('bens-list').innerHTML=fv.map(function(f,i){
+    var isA=f===aluno.faixa,ok=i<=idxA;
+    var items=BENS[f].map(function(b){return '<div style="display:flex;gap:9px;font-size:13px;color:'+(ok?'var(--tx)':'var(--tx3)')+'"><span style="color:'+corF[f]+'">*</span>'+b+'</div>';}).join('');
+    return '<div style="background:var(--bg2);border:1px solid '+(isA?corF[f]:'var(--brd)')+';border-radius:var(--rl);padding:18px;margin-bottom:12px;opacity:'+(ok?1:.45)+'"><div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap">'+fb(f)+'<span style="font-size:12px;color:var(--tx2)">meta: '+META[f]+' pts</span>'+(isA?'<span style="font-size:11px;background:var(--gold-bg);color:var(--gold);border:1px solid var(--gold-border);padding:2px 8px;border-radius:4px;margin-left:auto">Sua faixa</span>':'')+'</div><div style="display:flex;flex-direction:column;gap:7px">'+items+'</div></div>';
+  }).join('');
+}
+
 db=supabase.createClient('https://reahknhuglszlutlsskt.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJlYWhrbmh1Z2xzemx1dGxzc2t0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUxNTQxNDMsImV4cCI6MjA5MDczMDE0M30.2dOD2bc2FAgAScFHL-UTz6xYXhTGnjkVuM-0Z_I4b3U');
 </script>
 </body>
